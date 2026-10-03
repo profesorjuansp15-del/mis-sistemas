@@ -611,6 +611,67 @@ button.pn-sit{cursor:pointer;transition:transform .12s,box-shadow .12s;}button.p
 .cons-tc-b{min-width:24px;height:18px;font-size:11px;border-radius:5px;}
 .cons-sep-in{padding:5px 12px;font-size:11.5px;}
 
+/* ============================= CONFIGURACIÓN ============================= */
+.cfg-seg{display:inline-flex;border:1px solid var(--border);border-radius:10px;overflow:hidden;background:#fff;}
+.cfg-seg button{border:0;background:#fff;padding:10px 20px;font:700 13px var(--font-body);color:#4a5670;}
+.cfg-seg button:hover{background:#f3f6fa;}
+.cfg-seg button.on{background:#1f5c99;color:#fff;}
+.cfg-note{background:var(--teal-bg);border:1px solid #b2dfd7;color:#1c6f61;border-radius:10px;padding:9px 14px;font-size:12.5px;font-weight:500;}
+.cfg-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;}
+.cfg-lbl{display:block;font:700 11px var(--font-body);letter-spacing:.06em;text-transform:uppercase;color:#4a5670;margin:0 0 6px;}
+.cfg-in{width:100%;border:1px solid var(--border);border-radius:9px;padding:10px 12px;font:13px var(--font-body);background:#fff;color:var(--ink);}
+.cfg-in:focus{border-color:var(--blue);outline:none;}
+.cfg-field{margin-bottom:14px;}
+.cfg-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 16px;}
+@media(max-width:800px){.cfg-grid{grid-template-columns:1fr;}}
+.cfg-logo{width:240px;height:150px;border:2px dashed var(--border);border-radius:12px;display:flex;align-items:center;justify-content:center;background:#fafbfd;overflow:hidden;color:var(--muted);font-size:12px;}
+.cfg-logo img{max-width:100%;max-height:100%;object-fit:contain;}
+.cfg-box{border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin:14px 0;background:#fcfcfd;}
+.cfg-per{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+.cfg-per input{flex:1;}
+.cfg-per span{font:600 11px var(--font-body);color:var(--muted);min-width:64px;text-align:right;}
+.cfg-vis label{display:flex;align-items:center;gap:10px;padding:5px 2px;font-size:13px;cursor:pointer;}
+.cfg-vis input{width:17px;height:17px;accent-color:#1f5c99;}
+.cfg-check{display:flex;align-items:center;gap:10px;font-size:13px;cursor:pointer;}
+.cfg-check input{width:17px;height:17px;accent-color:#1f5c99;}
+.cfg-nomtools{display:grid;grid-template-columns:minmax(200px,1.4fr) minmax(150px,.8fr) minmax(150px,.8fr) auto;gap:12px;align-items:end;margin-bottom:12px;}
+@media(max-width:1000px){.cfg-nomtools{grid-template-columns:1fr 1fr;}}
+.cfg-scroll{max-height:560px;overflow:auto;border:1px solid var(--border);border-radius:10px;}
+.cfg-nom thead th{position:sticky;top:0;z-index:2;background:#eef3f8;cursor:default;text-align:center;}
+.cfg-nom thead th.l{text-align:left;}
+.cfg-nom td{padding:9px 12px;}
+.cfg-n{text-align:center;color:#4a5670;font:600 12.5px var(--font-mono);}
+.cfg-nm{font-weight:600;font-size:12.5px;color:#132641;}
+.cfg-sec{text-align:center;font-weight:800;color:#1f5c99;}
+.cfg-sit{display:inline-block;padding:4px 11px;border-radius:999px;font:800 11.5px var(--font-body);white-space:nowrap;}
+.cfg-sit.m{background:#e6f6f2;color:#1c6f61;}
+.cfg-sit.t{background:#fff4be;color:#6e5a00;}
+.cfg-av{display:flex;align-items:center;gap:10px;justify-content:center;}
+.cfg-av small{font-size:12px;color:var(--muted);}
+.cfg-ring{--p:0;width:46px;height:46px;border-radius:50%;background:conic-gradient(var(--teal) calc(var(--p)*1%),#e3e8ef 0);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.cfg-ring span{width:36px;height:36px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font:800 11px var(--font-mono);color:#132641;}
+
+.periodo-sel{display:flex;align-items:center;gap:8px;margin-right:12px;white-space:nowrap;}
+.periodo-sel label{font:700 11px var(--font-body);letter-spacing:.06em;text-transform:uppercase;color:#4a5670;}
+.periodo-sel select{border:1px solid var(--border);border-radius:9px;padding:8px 10px;font:600 13px var(--font-body);background:#fff;color:#132641;max-width:210px;}
+.periodo-sel select.on{border-color:#1f5c99;background:#eaf1ff;color:#1f5c99;}
+@media(max-width:700px){.periodo-sel label{display:none;}}
+.cmp-c{text-align:center;vertical-align:top;}
+.cfg-nom .cfg-nm{min-width:210px;}
+.cmp-n{display:inline-flex;min-width:30px;height:30px;border-radius:999px;align-items:center;justify-content:center;font:800 14px var(--font-mono);}
+.cmp-n.ok{background:#e6f6f2;color:#1c6f61;}
+.cmp-n.bad{background:#fdeceb;color:#a4222c;}
+.cmp-areas{font-size:11px;color:#4a5670;margin-top:4px;line-height:1.35;}
+.cmp-na{color:var(--muted);font-size:12px;}
+.cmp-ar{font-size:11px;font-weight:800;}
+.cmp-ar.up{color:#16875a;}.cmp-ar.down{color:#c4302b;}.cmp-ar.eq{color:#7a869a;}
+.cmp-badge{display:inline-block;padding:3px 10px;border-radius:999px;font:800 11px var(--font-body);white-space:nowrap;}
+.cmp-badge.cmp-up{background:#e6f6f2;color:#1c6f61;}
+.cmp-badge.cmp-down{background:#fdeceb;color:#a4222c;}
+.cmp-badge.cmp-eq{background:#eef1f5;color:#4a5670;}
+.cmp-badge.cmp-na{background:#f3f5f8;color:#7a869a;}
+.cmp-msg{font-size:12px;line-height:1.45;color:#2b3a55;min-width:300px;}
+.cmp-msg.fin{background:#f6faf8;border-left:3px solid #16875a;font-weight:500;}.cmp-tot td{background:#e8eef6;font-weight:800;color:#132641;}
 </style>
 </head>
 <body>
@@ -701,12 +762,14 @@ button.pn-sit{cursor:pointer;transition:transform .12s,box-shadow .12s;}button.p
           Eliminar estudiantes y notas
         </button>
       </div>
+      <div class="periodo-sel" id="periodoSel"></div>
       <div class="search-box">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
         <input type="search" id="globalSearch" placeholder="Buscar estudiante, DNI, docente…">
       </div>
     </div>
 
+    <div class="view view-hidden" id="viewConfiguracion"></div>
     <div class="view" id="viewDashboard"></div>
     <div class="view view-hidden" id="viewInstituciones"></div>
     <div class="view view-hidden" id="viewDocentes"></div>
@@ -716,6 +779,7 @@ button.pn-sit{cursor:pointer;transition:transform .12s,box-shadow .12s;}button.p
     <div class="view view-hidden" id="viewCalificaciones"></div>
     <div class="view view-hidden" id="viewRiesgo"></div>
     <div class="view view-hidden" id="viewSituacion"></div>
+    <div class="view view-hidden" id="viewComparativa"></div>
     <div class="view view-hidden" id="viewSitfinal"></div>
     <div class="view view-hidden" id="viewSeguimiento"></div>
     <div class="view view-hidden" id="viewReportes"></div>
@@ -808,13 +872,24 @@ function getCompMap(){
   return _cache.compMap;
 }
 /* Map vigentes: estId|areaId|compId → calificacion (string) */
+function periodoVista(){
+  var v=(DB.config&&DB.config.vista)||'';
+  if(!v) return '';
+  var ev=DB.config.evaluacion;
+  return (ev&&ev.nombres.indexOf(v)>=0)?v:'';
+}
+function periodoRank(p){ var ev=DB.config&&DB.config.evaluacion; return ev?ev.nombres.indexOf(p||''):-1; }
+function periodoDestino(def){ return periodoVista()||def; }
 function getVigentesMap(){
   if(_cache.vigentesMap) return _cache.vigentesMap;
-  const map = new Map();
+  const map = new Map(), vista = periodoVista();
   DB.calificaciones.forEach(c => {
+    if(vista && c.periodo!==vista) return;
     const k = c.estudianteId+'|'+c.areaId+'|'+c.competenciaId;
     const prev = map.get(k);
-    if(!prev || c.fecha >= prev.fecha) map.set(k, c);
+    if(!prev){ map.set(k, c); return; }
+    const rc=periodoRank(c.periodo), rp=periodoRank(prev.periodo);
+    if(rc>rp || (rc===rp && c.fecha >= prev.fecha)) map.set(k, c);
   });
   _cache.vigentesMap = map;
   return map;
@@ -909,6 +984,8 @@ const AREAS_DEFAULT = [
     'Gestiona su aprendizaje de manera autónoma']},
 ];
 
+function cfgDefault(){ return {nivel:'Secundaria', anio:String(new Date().getFullYear()), docente:'', logo:'', usarCastellano:true, vista:'', evaluacion:{modo:'bimestral', nombres:['Evaluación Diagnóstica','I Bimestre','II Bimestre','III Bimestre','IV Bimestre'], visibles:[false,true,true,true,true]}}; }
+function cfgMerge(c){ var d=cfgDefault(); c=c||{}; var o=Object.assign({},d,c); o.evaluacion=Object.assign({},d.evaluacion,c.evaluacion||{}); return o; }
 function seedDB(){
   return {
     instituciones: [],
@@ -918,18 +995,44 @@ function seedDB(){
     estudiantes: [],
     calificaciones: [],
     seguimientos: [],
+    config: cfgDefault(),
   };
 }
 
 /* ---------------------------- 3. PERSISTENCIA --------------------------- */
 let DB = loadDB();
-function loadDB(){
+var _idbPendiente;
+function idbAbrir(){
+  return new Promise(function(res,rej){
+    var r=indexedDB.open('sst_c_secundaria_idb',1);
+    r.onupgradeneeded=function(){ r.result.createObjectStore('kv'); };
+    r.onsuccess=function(){ res(r.result); };
+    r.onerror=function(){ rej(r.error); };
+  });
+}
+function idbPut(k,v){
+  return idbAbrir().then(function(db){ return new Promise(function(res,rej){
+    var t=db.transaction('kv','readwrite'); t.objectStore('kv').put(v,k);
+    t.oncomplete=function(){ db.close(); res(); };
+    t.onerror=t.onabort=function(){ db.close(); rej(t.error); };
+  }); });
+}
+function idbGet(k){
+  return idbAbrir().then(function(db){ return new Promise(function(res,rej){
+    var q=db.transaction('kv','readonly').objectStore('kv').get(k);
+    q.onsuccess=function(){ db.close(); res(q.result); };
+    q.onerror=function(){ db.close(); rej(q.error); };
+  }); });
+}
+function loadDB(rawOverride){
   try{
-    var raw = localStorage.getItem(DB_KEY);
+    var raw = (rawOverride!==undefined) ? rawOverride : localStorage.getItem(DB_KEY);
     if(!raw) return seedDB();
     var parsed = JSON.parse(raw);
+    if(rawOverride===undefined && parsed && parsed.idb){ _idbPendiente=true; return seedDB(); }
     var base = seedDB();
     var db = Object.assign(base, parsed, { areas: parsed.areas && parsed.areas.length ? parsed.areas : base.areas });
+    db.config = cfgMerge(parsed.config);
 
     // Migrar nombres de area v24->v25
     var ALIAS_V25 = {'Temas Transversales (TIC)':'Temas Transversales TIC','Quechua':'Temas Transversales Autonomia'};
@@ -956,9 +1059,11 @@ function loadDB(){
     });
 
     // Migrar formato compacto de calificaciones si existe
-    if(parsed.calificaciones_c && Array.isArray(parsed.calificaciones_c)){
+    if(parsed.calificaciones_v2 && Array.isArray(parsed.calificaciones_v2.r)){
+      db.calificaciones = desempaquetarCalificaciones(parsed.calificaciones_v2);
+    } else if(parsed.calificaciones_c && Array.isArray(parsed.calificaciones_c)){
       db.calificaciones = parsed.calificaciones_c.map(function(r){
-        return {id: uid('cal'), estudianteId:r[0], areaId:r[1], competenciaId:r[2], calificacion:r[3], fecha:r[4]||'', periodo:'Consolidado', docenteId:''};
+        return {id: uid('cal'), estudianteId:r[0], areaId:r[1], competenciaId:r[2], calificacion:r[3], fecha:r[4]||'', periodo:(r[5]===undefined?'Consolidado':r[5]), docenteId:''};
       });
     }
     var competenciasValidas=new Set();
@@ -973,7 +1078,7 @@ function purgarDuplicados(){
   var hayDup = false;
   for(var i = 0; i < DB.calificaciones.length; i++){
     var c = DB.calificaciones[i];
-    var k = c.estudianteId+'|'+c.areaId+'|'+c.competenciaId;
+    var k = c.estudianteId+'|'+c.areaId+'|'+c.competenciaId+'|'+(c.periodo||'');
     if(seen[k]){ hayDup = true; break; }
     seen[k] = true;
   }
@@ -983,10 +1088,25 @@ function purgarDuplicados(){
   var limpia = [];
   for(var j = DB.calificaciones.length - 1; j >= 0; j--){
     var d = DB.calificaciones[j];
-    var k2 = d.estudianteId+'|'+d.areaId+'|'+d.competenciaId;
+    var k2 = d.estudianteId+'|'+d.areaId+'|'+d.competenciaId+'|'+(d.periodo||'');
     if(!seen2[k2]){ seen2[k2] = true; limpia.push(d); }
   }
   DB.calificaciones = limpia.reverse();
+}
+/* Formato compacto v2: tablas de ids + filas numéricas (≈6 veces más liviano) */
+function empaquetarCalificaciones(){
+  var E=[],K=[],P=[],Fh=[],mE={},mK={},mP={},mF={};
+  function ix(arr,map,v){ if(map[v]===undefined){ map[v]=arr.length; arr.push(v); } return map[v]; }
+  var r=DB.calificaciones.map(function(c){
+    return [ix(E,mE,c.estudianteId), ix(K,mK,c.areaId+'|'+c.competenciaId), c.calificacion, ix(P,mP,c.periodo||''), ix(Fh,mF,c.fecha||'')];
+  });
+  return {e:E,k:K,p:P,f:Fh,r:r};
+}
+function desempaquetarCalificaciones(v){
+  return (v.r||[]).map(function(x){
+    var k=String(v.k[x[1]]||'').split('|');
+    return {id:uid('cal'), estudianteId:v.e[x[0]], areaId:k[0], competenciaId:k[1], calificacion:x[2], periodo:v.p[x[3]], fecha:v.f[x[4]], docenteId:''};
+  });
 }
 function buildStoragePayload(){
   invalidateCache();
@@ -1000,26 +1120,23 @@ function buildStoragePayload(){
     areas: DB.areas,
     estudiantes: DB.estudiantes,
     seguimientos: DB.seguimientos,
-    calificaciones_c: DB.calificaciones.map(function(c){
-      return [c.estudianteId, c.areaId, c.competenciaId, c.calificacion, c.fecha];
-    })
+    config: DB.config,
+    calificaciones_v2: empaquetarCalificaciones()
   };
 }
 function persistDBNow(){
   var dbGuardar = buildStoragePayload();
-  try{
-    localStorage.setItem(DB_KEY, JSON.stringify(dbGuardar));
-  }catch(e){
-    // Si aun así hay cuota, limpiar calificaciones huérfanas y reintentar
-    var estIds = new Set(DB.estudiantes.map(function(x){return x.id;}));
-    var areaIds = new Set(DB.areas.map(function(x){return x.id;}));
-    DB.calificaciones = DB.calificaciones.filter(function(c){
-      return estIds.has(c.estudianteId) && areaIds.has(c.areaId);
+  var str = JSON.stringify(dbGuardar);
+  var okLS = true;
+  try{ localStorage.setItem(DB_KEY, str); }catch(e){ okLS = false; }
+  if(!okLS){
+    // localStorage lleno (se comparte con otros archivos locales): usar IndexedDB, que tiene mucha más capacidad
+    try{ localStorage.setItem(DB_KEY, '{"idb":1}'); }catch(e2){}
+    idbPut('db', str).catch(function(err){
+      console.error('No se pudo guardar en IndexedDB', err);
+      actualizarEstadoOffice('error');
+      toast('No se pudo guardar en el navegador. Usa Guardar (archivo .ssc) para proteger tus datos.','err');
     });
-    dbGuardar.calificaciones_c = DB.calificaciones.map(function(c){
-      return [c.estudianteId, c.areaId, c.competenciaId, c.calificacion, c.fecha];
-    });
-    localStorage.setItem(DB_KEY, JSON.stringify(dbGuardar));
   }
   officeDirty = false;
   officeLastSavedAt = new Date();
@@ -1119,8 +1236,7 @@ function abrirArchivoOffice(event){
     try{
       var data=normalizarRespaldoOffice(reader.result);
       if(!confirm('Se abrirá este archivo y reemplazará los datos visibles actuales. ¿Deseas continuar?')) return;
-      localStorage.setItem(DB_KEY,JSON.stringify(data));
-      DB=loadDB(); invalidateCache(); officeDirty=false; officeFileHandle=null; officeLastSavedAt=new Date();
+      DB=loadDB(JSON.stringify(data)); invalidateCache(); persistDBNow(); officeDirty=false; officeFileHandle=null; officeLastSavedAt=new Date();
       var nameEl=$('#officeFileName');if(nameEl)nameEl.textContent=file.name;
       buildNav();renderCurrentView();sincronizarControlesOffice();toast('Archivo abierto correctamente.');
     }catch(err){console.error(err);actualizarEstadoOffice('error');toast('El archivo no es un respaldo válido de Secundaria.','err');}
@@ -1992,6 +2108,7 @@ function formEstudiante(id){
         <div class="field"><label>Institución educativa</label><select name="institucionId" onchange="document.getElementById('fEst').seccion.dispatchEvent(new Event('refresh'))">${selectOptions(DB.instituciones,'id',i=>i.nombre,item.institucionId)}</select></div>
         <div class="field"><label>Grado <span class="req">*</span></label><select name="grado">${GRADOS.map(g=>`<option value="${g}" ${item.grado==g?'selected':''}>${g}.º de Secundaria</option>`).join('')}</select></div>
         <div class="field"><label>Sección <span class="req">*</span></label><select name="seccion">${SECCION_LETRAS.map(s=>`<option ${item.seccion===s?'selected':''}>${s}</option>`).join('')}</select></div>
+        <div class="field"><label>Situación</label><select name="traslado"><option value="NO" ${item.traslado!=='SI'?'selected':''}>Matrícula (M)</option><option value="SI" ${item.traslado==='SI'?'selected':''}>Traslado (T)</option></select></div>
       </div>
     </form>`,
     `<button class="btn secondary" onclick="closeModal()">Cancelar</button><button class="btn" onclick="saveEstudiante('${id||''}')">Guardar</button>`);
@@ -2040,6 +2157,7 @@ function confirmarEliminarTodosEstudiantes(){
   closeModal();
   renderSidebarBadge();
   renderEstudiantes();
+  if(currentView==='configuracion') renderConfiguracion();
   toast('Todos los estudiantes han sido eliminados.');
 }
 
@@ -2060,6 +2178,7 @@ function califFiltrar(ignorarNota){
   const f=califFiltros, estMap=getEstMap(), q=califNorm(f.q);
   return DB.calificaciones.filter(function(r){
     const e=estMap.get(r.estudianteId); if(!e) return false;
+    if(periodoVista() && r.periodo!==periodoVista()) return false;
     if(f.gs && califGS(e)!==f.gs) return false;
     if(f.estId && r.estudianteId!==f.estId) return false;
     if(f.areaId && r.areaId!==f.areaId) return false;
@@ -2354,7 +2473,7 @@ function formCalificacion(){
         <div class="field"><label>Área curricular <span class="req">*</span></label><select name="areaId" onchange="fillCompetenciasSelect(this.value)">${selectOptions(DB.areas,'id',a=>a.nombre)}</select></div>
         <div class="field"><label>Competencia <span class="req">*</span></label><select name="competenciaId" id="selCompetencia">${firstArea?selectOptions(firstArea.competencias,'id',c=>c.nombre):''}</select></div>
         <div class="field"><label>Calificación <span class="req">*</span></label><select name="calificacion">${NOTAS.map(n=>`<option value="${n}">${n} — ${NOTA_LABEL[n]}</option>`).join('')}</select></div>
-        <div class="field"><label>Periodo</label><input name="periodo" placeholder="I Bimestre / II Trimestre…"></div>
+        <div class="field"><label>Periodo</label><input name="periodo" list="dlPeriodos" placeholder="I Bimestre / II Trimestre…"><datalist id="dlPeriodos">${cfgPeriodosVisibles().map(p=>`<option value="${esc(p)}">`).join('')}</datalist></div>
         <div class="field"><label>Fecha <span class="req">*</span></label><input type="date" name="fecha" value="${todayISO()}"></div>
       </div>
       <div class="field"><label>Docente que registra</label><select name="docenteId"><option value="">— Sin asignar —</option>${selectOptions(DB.docentes,'id',d=>d.apellidos+', '+d.nombres)}</select></div>
@@ -2368,7 +2487,7 @@ function fillCompetenciasSelect(areaId){
 function saveCalificacion(){
   const f = $('#fCalif');
   if(!f.competenciaId.value){ toast('El área seleccionada no tiene competencias registradas.','err'); return; }
-  const data = {estudianteId:f.estudianteId.value, areaId:f.areaId.value, competenciaId:f.competenciaId.value, calificacion:f.calificacion.value, periodo:f.periodo.value.trim(), fecha:f.fecha.value||todayISO(), docenteId:f.docenteId.value};
+  const data = {estudianteId:f.estudianteId.value, areaId:f.areaId.value, competenciaId:f.competenciaId.value, calificacion:f.calificacion.value, periodo:f.periodo.value.trim()||periodoDestino(''), fecha:f.fecha.value||todayISO(), docenteId:f.docenteId.value};
   DB.calificaciones.push({id:uid('cal'), ...data});
   saveDB(); closeModal(); toast(data.calificacion==='C' ? 'Calificación C registrada — estudiante añadido al monitoreo de riesgo.' : 'Calificación registrada.', data.calificacion==='C'?'err':'ok');
   if($('#viewCalificaciones').classList.contains('view-hidden')===false) renderCalificaciones();
@@ -4476,10 +4595,12 @@ function siagieAplicarResultado(resultado){
       comps.forEach(function(cd, j){
         if(!cd || !cd.nl) return;
         // Reemplazar o agregar: clave (estudianteId, areaId, competenciaId) — todo IDs estables
+        var perS = periodoDestino('SIAGIE');
         var idx = DB.calificaciones.findIndex(function(c){
           return c.estudianteId === est.id &&
                  c.areaId       === areaId &&
-                 c.competenciaId === cd.compId;
+                 c.competenciaId === cd.compId &&
+                 (c.periodo||'') === perS;
         });
         var reg = {
           id: uid('cal'),
@@ -4487,7 +4608,7 @@ function siagieAplicarResultado(resultado){
           areaId:       areaId,
           competenciaId: cd.compId,
           calificacion:  cd.nl,
-          periodo: 'SIAGIE',
+          periodo: perS,
           fecha:   hoy,
           docenteId: ''
         };
@@ -4932,11 +5053,11 @@ let _situacionFiltros={grado:'',seccion:'',estado:'',q:''};
 const SIT_ABREV={'Desarrollo Personal, Ciudadanía y Cívica':'DPCC','Ciencias Sociales':'CCSS','Educación para el Trabajo':'EPT','Educación Física':'EF','Comunicación':'COM','Arte y Cultura':'ART','Inglés':'ING','Matemática':'MAT','Ciencia y Tecnología':'CYT','Educación Religiosa':'ER'};
 function sitAbrev(n){ return SIT_ABREV[n]||n; }
 /* Fuente única de reglas: RVM 094-2020-MINEDU modificada por RVM 048-2024-MINEDU (sección 5.1.3) */
-function calcularSituacionEstudiante(estudiante){
+function calcularSituacionEstudiante(estudiante, vmap){
   if(estudiante.traslado==='SI'){
     return {estudiante,grado:Number(estudiante.grado),estado:'TRASLADADO',codigo:'TRASLADADO',codigoExcel:'TRAS',motivo:'Estudiante trasladado.',totalC:0,nAD:0,nA:0,nB:0,nC:0,evaluadas:0,totalCompetencias:0,areasDesaprobadas:[],areasConC:[],areasARecuperar:[],cobertura:0};
   }
-  const vigentes=getVigentesMap(), grado=Number(estudiante.grado), g25=(grado===2||grado===5);
+  const vigentes=vmap||getVigentesMap(), grado=Number(estudiante.grado), g25=(grado===2||grado===5);
   let evaluadas=0, totalCompetencias=0, nAD=0,nA=0,nB=0,nC=0;
   const areasDesaprobadas=[], areasConC=[];
   let areasOK=0, areasEval=0, areasAAD=0;
@@ -4973,7 +5094,7 @@ function calcularSituacionEstudiante(estudiante){
   }
   const codigoExcel={PROMOVIDO:'PROM',RECUPERACION:'REC',PERMANECE:'PER',SIN_EVALUAR:'—'}[codigo]||'—';
   const areasARecuperar=(g25&&codigo==='RECUPERACION')?areasConC.filter(function(n){return areasDesaprobadas.indexOf(n)<0;}):[];
-  return {estudiante,grado,estado,codigo,codigoExcel,motivo,totalC:nC,nAD,nA,nB,nC,evaluadas,totalCompetencias,areasDesaprobadas,areasConC,areasARecuperar,
+  return {estudiante,grado,estado,codigo,codigoExcel,motivo,totalC:nC,nAD,nA,nB,nC,evaluadas,totalCompetencias,areasDesaprobadas,areasConC,areasARecuperar,areasEvaluadas:areasEval,
     cobertura:totalCompetencias?Math.round(evaluadas*100/totalCompetencias):0};
 }
 
@@ -5356,6 +5477,7 @@ function sfImprimir(){
    ============================================================ */
 const MENU = [
   {group:'Registro académico', items:[
+    {id:'configuracion', label:'Configuración', icon:'cog', render:renderConfiguracion, title:'Configuración', sub:'Nivel, datos institucionales, evaluación y nómina de estudiantes'},
     {id:'estudiantes', label:'Estudiantes', icon:'user', render:renderEstudiantes, title:'Estudiantes', sub:'Matrícula y datos personales'},
     {id:'siagie', label:'Adjuntar SIAGIE', icon:'upload', render:renderSiagie, title:'Adjuntar SIAGIE', sub:'Importar notas desde archivo Excel del SIAGIE'},
     {id:'consolidado', label:'Consolidado', icon:'table', render:renderConsolidado, title:'Consolidado de calificaciones', sub:'Importar y exportar notas por competencia'},
@@ -5364,6 +5486,7 @@ const MENU = [
   {group:'Monitoreo', items:[
     {id:'dashboard', label:'Panel de seguimiento', icon:'grid', render:renderDashboard, title:'Panel de seguimiento', sub:'Áreas, competencias, niveles de logro y situación · filtros por IE, grado y sección'},
     {id:'situacion', label:'Situación del estudiante', icon:'check', render:renderSituacion, title:'Situación del estudiante', sub:'Promoción, recuperación y permanencia en el grado'},
+    {id:'comparativa', label:'Comparativa anual', icon:'trend', render:renderComparativa, title:'Comparativa anual', sub:'Áreas desaprobadas por período, evolución del rendimiento y mensaje final'},
     {id:'sitfinal', label:'Situación final', icon:'layers', render:renderSituacionFinal, title:'Situación final', sub:'Promovidos, recuperación, permanencia y trasladados por grado y sexo'},
     {id:'riesgo', label:'Estudiantes con C', icon:'alert', render:renderRiesgo, title:'Estudiantes con calificación C', sub:'Detección automática de riesgo académico', badge:true},
     {id:'seguimiento', label:'Fichas de seguimiento', icon:'file', render:renderSeguimiento, title:'Seguimiento pedagógico', sub:'Fichas individuales de acompañamiento'},
@@ -5373,6 +5496,8 @@ const MENU = [
   ]},
 ];
 const ICONS = {
+  trend:'<polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/>',
+  cog:'<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/>',
   grid:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
   alert:'<path d="M10.3 3.9 1.8 18a1.5 1.5 0 0 0 1.3 2.2h17.8a1.5 1.5 0 0 0 1.3-2.2L13.7 3.9a1.5 1.5 0 0 0-2.6 0Z"/><path d="M12 9v4M12 17h.01"/>',
   file:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/>',
@@ -5412,11 +5537,26 @@ function navigateTo(id){
   // Mostrar acciones del Consolidado solo en esa vista
   const ca = $('#consolidadoActions');
   if(ca) ca.style.display = (id === 'consolidado') ? 'flex' : 'none';
+  renderPeriodoSelector();
   item.render();
   window.scrollTo(0,0);
 }
 function capitalize(s){ return s.charAt(0).toUpperCase()+s.slice(1); }
+function renderPeriodoSelector(){
+  const box=$('#periodoSel'); if(!box) return;
+  const v=periodoVista(), nombres=cfgPeriodosVisibles();
+  box.innerHTML='<label for="periodoSelect">Período</label><select id="periodoSelect" class="'+(v?'on':'')+'" onchange="cambiarPeriodoVista(this.value)">'+
+    '<option value="">Vigente (último con nota)</option>'+
+    nombres.map(function(n){return '<option value="'+esc(n)+'"'+(n===v?' selected':'')+'>'+esc(n)+'</option>';}).join('')+'</select>';
+}
+function cambiarPeriodoVista(v){
+  DB.config.vista=v||''; invalidateCache();
+  renderPeriodoSelector(); renderCurrentView();
+  try{ saveDB(); }catch(e){ console.error(e); }
+  toast(v?('Mostrando: '+v):'Mostrando la nota vigente (último período con nota).','info');
+}
 function renderCurrentView(){
+  renderPeriodoSelector();
   const item = MENU.flatMap(g=>g.items).find(i=>i.id===currentView);
   if(item) item.render();
   renderSidebarBadge();
@@ -6289,9 +6429,9 @@ function importarConsolidado(event){
         colMap.forEach(function(entry){
           var nota=String(row[entry.col]||'').trim().toUpperCase();
           if(!NOTAS_V.has(nota)) return;
-          var idx=DB.calificaciones.findIndex(function(c){return c.estudianteId===estRef.id&&c.areaId===entry.areaId&&c.competenciaId===entry.competenciaId;});
+          var idx=DB.calificaciones.findIndex(function(c){return c.estudianteId===estRef.id&&c.areaId===entry.areaId&&c.competenciaId===entry.competenciaId&&(c.periodo||'')===periodoDestino('Consolidado');});
           if(idx>=0) DB.calificaciones.splice(idx,1);
-          DB.calificaciones.push({id:uid('cal'),estudianteId:estRef.id,areaId:entry.areaId,competenciaId:entry.competenciaId,calificacion:nota,periodo:'Consolidado',fecha:hoy,docenteId:''});
+          DB.calificaciones.push({id:uid('cal'),estudianteId:estRef.id,areaId:entry.areaId,competenciaId:entry.competenciaId,calificacion:nota,periodo:periodoDestino('Consolidado'),fecha:hoy,docenteId:''});
           if(nota==='C') conCNuevos.add(estRef.id);
           alguna=true;
         });
@@ -6491,6 +6631,672 @@ function exportarConsolidadoActual(){
 }
 
 /* ============================================================
+   MÓDULO: CONFIGURACIÓN
+   Nivel educativo · Datos institucionales · Modo de evaluación ·
+   Áreas curriculares · Nómina de estudiantes por grado y sección.
+   Todo se guarda en DB.config (incluido en el respaldo .ssc) y la
+   institución se sincroniza con DB.instituciones[0].
+   ============================================================ */
+const CFG_PERIODOS={
+  bimestral:['Evaluación Diagnóstica','I Bimestre','II Bimestre','III Bimestre','IV Bimestre'],
+  trimestral:['Evaluación Diagnóstica','I Trimestre','II Trimestre','III Trimestre']
+};
+const CFG_VIS_DEF={bimestral:[false,true,true,true,true],trimestral:[false,true,true,true]};
+let cfgEvDraft=null;
+let cfgFiltro={q:'',grado:'',seccion:''};
+
+function cfgIEId(){ return DB.instituciones[0]?DB.instituciones[0].id:''; }
+function cfgPeriodosVisibles(){ const ev=DB.config.evaluacion; return ev.nombres.filter(function(n,i){return ev.visibles[i];}); }
+function cfgGYS(e){ return e.grado+String(e.seccion||'').toUpperCase(); }
+
+function renderConfiguracion(){
+  const C=DB.config, ie=DB.instituciones[0]||{nombre:'',ugel:'',director:''};
+  cfgEvDraft={modo:C.evaluacion.modo,nombres:C.evaluacion.nombres.slice(),visibles:C.evaluacion.visibles.slice()};
+  const sub=$('#viewSub'); if(sub) sub.textContent=ie.nombre||'Nivel, datos institucionales, evaluación y nómina de estudiantes';
+  const ico=function(d){ return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">'+d+'</svg>'; };
+  const gradosOpt='<option value="">Todos los grados</option>'+GRADOS.map(function(g){return '<option value="'+g+'"'+(String(cfgFiltro.grado)===String(g)?' selected':'')+'>'+g+'.º grado</option>';}).join('');
+  const secOpt='<option value="">Todas las secciones</option>'+SECCION_LETRAS.map(function(s){return '<option value="'+s+'"'+(cfgFiltro.seccion===s?' selected':'')+'>Sección '+s+'</option>';}).join('');
+  $('#viewConfiguracion').innerHTML=
+  '<div class="card"><div class="card-head"><h3>Nivel educativo</h3></div>'+
+    '<div class="cfg-row"><div class="cfg-seg" id="cfgNivelSeg">'+
+      '<button type="button" data-n="Secundaria" class="on" onclick="cfgSetNivel(\'Secundaria\')">Secundaria</button></div>'+
+    '<div class="cfg-note" id="cfgNivelNote"></div></div></div>'+
+
+  '<div class="card"><div class="card-head"><h3>Datos institucionales</h3></div>'+
+    '<div class="cfg-field"><label class="cfg-lbl" for="cfgIE">Institución educativa</label><input class="cfg-in" id="cfgIE" value="'+esc(ie.nombre||'')+'" placeholder="Nombre de la institución educativa"></div>'+
+    '<div class="cfg-grid">'+
+      '<div class="cfg-field"><label class="cfg-lbl" for="cfgAnio">Año escolar</label><input class="cfg-in" id="cfgAnio" value="'+esc(C.anio||'')+'"></div>'+
+      '<div class="cfg-field"><label class="cfg-lbl" for="cfgUgel">UGEL</label><input class="cfg-in" id="cfgUgel" value="'+esc(ie.ugel||'')+'"></div>'+
+      '<div class="cfg-field"><label class="cfg-lbl" for="cfgDirector">Director(a)</label><input class="cfg-in" id="cfgDirector" value="'+esc(ie.director||'')+'"></div>'+
+      '<div class="cfg-field"><label class="cfg-lbl" for="cfgDocente">Docente / Cargo</label><input class="cfg-in" id="cfgDocente" value="'+esc(C.docente||'')+'"></div>'+
+    '</div>'+
+    '<div class="cfg-field"><span class="cfg-lbl">Logo de la IE</span><div class="cfg-row" style="align-items:flex-end;">'+
+      '<div class="cfg-logo" id="cfgLogoBox"></div>'+
+      '<div class="btn-row" style="flex-direction:column;align-items:stretch;">'+
+        '<label class="btn secondary file-label-btn" style="justify-content:center;cursor:pointer;">'+ico('<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>')+'Subir logo<input type="file" accept="image/*" onchange="cfgSubirLogo(event)"></label>'+
+        '<button type="button" class="btn secondary" id="cfgQuitarLogo" onclick="cfgQuitarLogo()">Quitar logo</button></div></div></div>'+
+    '<button type="button" class="btn" onclick="cfgGuardarDatos()">Guardar datos institucionales</button></div>'+
+
+  '<div class="card"><div class="card-head"><h3>Modo de evaluación</h3></div>'+
+    '<div class="cfg-row"><div class="cfg-seg" id="cfgModoSeg">'+
+      '<button type="button" data-m="bimestral" onclick="cfgSetModo(\'bimestral\')">Bimestral (4)</button>'+
+      '<button type="button" data-m="trimestral" onclick="cfgSetModo(\'trimestral\')">Trimestral (3)</button></div>'+
+    '<div class="cfg-note" id="cfgModoNote"></div></div>'+
+    '<div class="cfg-box"><div class="small-muted" style="margin-bottom:10px;">Períodos (edita los nombres):</div><div id="cfgPerNombres"></div>'+
+      '<div class="small-muted" style="margin:14px 0 6px;">Períodos visibles en el sistema (desmarca para ocultarlos en los selectores, ej. solo Período 1 al 4):</div><div class="cfg-vis" id="cfgPerVis"></div></div>'+
+    '<button type="button" class="btn" onclick="cfgAplicarPeriodos()">Aplicar configuración de períodos</button></div>'+
+
+  '<div class="card"><div class="card-head"><h3>Áreas curriculares</h3></div>'+
+    '<label class="cfg-check"><input type="checkbox" id="cfgCastellano"'+(C.usarCastellano?' checked':'')+' onchange="cfgSetCastellano(this.checked)"> Usar el área de Castellano (desactívala si tu IE no la dicta)</label></div>'+
+
+  '<div class="card"><div class="card-head"><h3>Nómina de estudiantes por grado y sección</h3></div>'+
+    '<div class="help-note">Usa «Descargar plantilla XLSX» para completar en Excel las columnas GYS, N°, apellidos y nombres, y situación, y luego «Subir plantilla». Si dejas la situación vacía, se registrará automáticamente como M (matriculado); T indica trasladado.</div>'+
+    '<div class="cfg-nomtools">'+
+      '<div><label class="cfg-lbl" for="cfgQ">Buscar</label><input class="cfg-in" id="cfgQ" placeholder="Nombre o sección" value="'+esc(cfgFiltro.q)+'" oninput="cfgFiltro.q=this.value;cfgPaintNomina()"></div>'+
+      '<div><label class="cfg-lbl" for="cfgG">Grado</label><select class="cfg-in" id="cfgG" onchange="cfgFiltro.grado=this.value;cfgPaintNomina()">'+gradosOpt+'</select></div>'+
+      '<div><label class="cfg-lbl" for="cfgS">Sección</label><select class="cfg-in" id="cfgS" onchange="cfgFiltro.seccion=this.value;cfgPaintNomina()">'+secOpt+'</select></div>'+
+      '<div></div></div>'+
+    '<div class="btn-row" style="margin-bottom:12px;">'+
+      '<button type="button" class="btn secondary" onclick="cfgDescargarPlantilla()">'+ico('<path d="M12 3v12m0 0-4-4m4 4 4-4M4 19h16"/>')+'Descargar plantilla XLSX</button>'+
+      '<label class="btn secondary file-label-btn" style="cursor:pointer;">'+ico('<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>')+'Subir plantilla<input type="file" accept=".xlsx,.xls" onchange="cfgImportarNomina(event)"></label>'+
+      '<label class="btn secondary file-label-btn" style="cursor:pointer;">'+ico('<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/>')+'Cargar JSON<input type="file" accept=".json,application/json" onchange="cfgLeerJson(event)"></label>'+
+      '<button type="button" class="btn gold" onclick="cfgLlenadoRapido()">Llenado rápido</button>'+
+      '<button type="button" class="btn" onclick="formEstudiante()">'+ico('<path d="M12 5v14M5 12h14"/>')+'Estudiante</button>'+
+      '<button type="button" class="btn danger" onclick="eliminarTodosEstudiantes()">Eliminar todos</button></div>'+
+    '<div class="small-muted" id="cfgNominaCount" style="margin-bottom:8px;"></div>'+
+    '<div id="cfgNomina"></div></div>';
+  cfgPaintNivel(); cfgPaintLogo(); cfgPaintPeriodos(); cfgPaintNomina();
+}
+
+/* ---------- Nivel educativo ---------- */
+function cfgPaintNivel(){
+  DB.config.nivel='Secundaria'; const n='Secundaria';
+  $$('#cfgNivelSeg button').forEach(function(b){ b.classList.toggle('on',b.dataset.n===n); });
+  const note=$('#cfgNivelNote');
+  if(note) note.textContent = 'Secundaria: 1.º a 5.º grado, áreas y competencias de Secundaria';
+}
+function cfgSetNivel(n){
+  DB.config.nivel=n; saveDB(); cfgPaintNivel();
+  if(n!=='Secundaria') toast('Nivel registrado. Este sistema trabaja con la estructura de áreas de Secundaria.','info');
+}
+
+/* ---------- Datos institucionales ---------- */
+function cfgGuardarDatos(){
+  const nombre=$('#cfgIE').value.trim();
+  if(!nombre){ toast('Ingresa el nombre de la institución educativa.','err'); $('#cfgIE').focus(); return; }
+  const C=DB.config;
+  C.anio=$('#cfgAnio').value.trim()||C.anio;
+  C.docente=$('#cfgDocente').value.trim();
+  let ie=DB.instituciones[0];
+  if(!ie){ ie={id:uid('inst'),nombre:'',codigoModular:'',dre:'',ugel:'',director:'',telefono:''}; DB.instituciones.push(ie); }
+  ie.nombre=nombre; ie.ugel=$('#cfgUgel').value.trim(); ie.director=$('#cfgDirector').value.trim();
+  DB.estudiantes.forEach(function(e){ if(!e.institucionId) e.institucionId=ie.id; });
+  saveDB();
+  const sub=$('#viewSub'); if(sub) sub.textContent=nombre;
+  toast('Datos institucionales guardados.');
+}
+function cfgPaintLogo(){
+  const box=$('#cfgLogoBox'), btn=$('#cfgQuitarLogo'), logo=DB.config.logo;
+  if(box) box.innerHTML=logo?'<img alt="Logo de la IE" src="'+logo+'">':'<span>Sin logo</span>';
+  if(btn) btn.disabled=!logo;
+}
+function cfgSubirLogo(ev){
+  const f=ev.target.files[0]; ev.target.value='';
+  if(!f) return;
+  if(!/^image\//.test(f.type)){ toast('Selecciona un archivo de imagen.','err'); return; }
+  const r=new FileReader();
+  r.onload=function(){
+    const img=new Image();
+    img.onload=function(){
+      const k=Math.min(1,400/Math.max(img.width,img.height)), c=document.createElement('canvas');
+      c.width=Math.max(1,Math.round(img.width*k)); c.height=Math.max(1,Math.round(img.height*k));
+      c.getContext('2d').drawImage(img,0,0,c.width,c.height);
+      DB.config.logo=c.toDataURL('image/png'); saveDB(); cfgPaintLogo(); toast('Logo cargado.');
+    };
+    img.onerror=function(){ toast('No se pudo leer la imagen.','err'); };
+    img.src=r.result;
+  };
+  r.onerror=function(){ toast('No se pudo leer el archivo.','err'); };
+  r.readAsDataURL(f);
+}
+function cfgQuitarLogo(){ DB.config.logo=''; saveDB(); cfgPaintLogo(); toast('Logo quitado.'); }
+
+/* ---------- Modo de evaluación ---------- */
+function cfgSetModo(m){
+  const d=cfgEvDraft, ev=DB.config.evaluacion;
+  if(d.modo===m) return;
+  d.modo=m;
+  if(ev.modo===m){ d.nombres=ev.nombres.slice(); d.visibles=ev.visibles.slice(); }
+  else { d.nombres=CFG_PERIODOS[m].slice(); d.visibles=CFG_VIS_DEF[m].slice(); }
+  cfgPaintPeriodos();
+}
+function cfgPaintPeriodos(){
+  const d=cfgEvDraft; if(!d) return;
+  $$('#cfgModoSeg button').forEach(function(b){ b.classList.toggle('on',b.dataset.m===d.modo); });
+  const note=$('#cfgModoNote');
+  if(note) note.textContent = d.modo==='bimestral' ? 'Evaluación Diagnóstica + 4 bimestres = 5 períodos' : 'Evaluación Diagnóstica + 3 trimestres = 4 períodos';
+  const n=CFG_PERIODOS[d.modo].length;
+  $('#cfgPerNombres').innerHTML=d.nombres.slice(0,n).map(function(nm,i){
+    return '<div class="cfg-per"><input class="cfg-in" value="'+esc(nm)+'" oninput="cfgEditPeriodo('+i+',this.value)"><span>Período '+i+'</span></div>';
+  }).join('');
+  $('#cfgPerVis').innerHTML=d.nombres.slice(0,n).map(function(nm,i){
+    return '<label><input type="checkbox"'+(d.visibles[i]?' checked':'')+' onchange="cfgEditVisible('+i+',this.checked)"><span id="cfgPerLbl'+i+'">Período '+i+' · '+esc(nm)+'</span></label>';
+  }).join('');
+}
+function cfgEditPeriodo(i,v){
+  cfgEvDraft.nombres[i]=v;
+  const l=document.getElementById('cfgPerLbl'+i); if(l) l.textContent='Período '+i+' · '+v;
+}
+function cfgEditVisible(i,v){ cfgEvDraft.visibles[i]=!!v; }
+function cfgAplicarPeriodos(){
+  const d=cfgEvDraft, n=CFG_PERIODOS[d.modo].length;
+  const nombres=d.nombres.slice(0,n).map(function(x,i){ return String(x||'').trim()||CFG_PERIODOS[d.modo][i]; });
+  const visibles=d.visibles.slice(0,n).map(function(v){return !!v;});
+  while(visibles.length<n) visibles.push(true);
+  if(!visibles.some(Boolean)){ toast('Deja al menos un período visible.','err'); return; }
+  DB.config.evaluacion={modo:d.modo,nombres:nombres,visibles:visibles};
+  saveDB(); cfgEvDraft={modo:d.modo,nombres:nombres.slice(),visibles:visibles.slice()}; cfgPaintPeriodos(); renderPeriodoSelector();
+  toast('Configuración de períodos aplicada.');
+}
+
+/* ---------- Áreas curriculares ---------- */
+function cfgSetCastellano(v){ DB.config.usarCastellano=!!v; saveDB(); toast(v?'Área de Castellano activada.':'Área de Castellano desactivada.'); }
+
+/* ---------- Nómina de estudiantes ---------- */
+function cfgPaintNomina(){
+  const host=$('#cfgNomina'); if(!host) return;
+  const f=cfgFiltro, q=normStr(f.q);
+  const totalComp=areasOrdenadas().reduce(function(s,a){return s+a.competencias.length;},0)||1;
+  const cnt=new Map();
+  getVigentesMap().forEach(function(r){ if(r.calificacion) cnt.set(r.estudianteId,(cnt.get(r.estudianteId)||0)+1); });
+  const all=[...DB.estudiantes].sort(function(a,b){return a.grado-b.grado||String(a.seccion||'').localeCompare(String(b.seccion||''))||a.apellidos.localeCompare(b.apellidos);});
+  const num=new Map(), c={};
+  all.forEach(function(e){ const g=cfgGYS(e); c[g]=(c[g]||0)+1; num.set(e.id,c[g]); });
+  const rows=all.filter(function(e){
+    if(f.grado && String(e.grado)!==String(f.grado)) return false;
+    if(f.seccion && String(e.seccion||'').toUpperCase()!==f.seccion) return false;
+    if(q && normStr(e.apellidos+' '+e.nombres+' '+cfgGYS(e)).indexOf(q)<0) return false;
+    return true;
+  });
+  const cn=$('#cfgNominaCount'); if(cn) cn.textContent='Mostrando '+rows.length+' de '+all.length+' estudiantes';
+  if(!rows.length){ host.innerHTML='<div class="empty-state"><p>'+(all.length?'No hay estudiantes con los filtros actuales.':'Aún no hay estudiantes. Usa la plantilla, el llenado rápido o el botón Estudiante.')+'</p></div>'; return; }
+  const pen='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
+  host.innerHTML='<div class="cfg-scroll"><table class="cfg-nom"><thead><tr><th style="width:56px;">N°</th><th class="l">Apellidos y nombres</th><th>Sección</th><th>Situación</th><th>Avance anual</th><th style="width:110px;">Acciones</th></tr></thead><tbody>'+
+    rows.map(function(e){
+      const t=e.traslado==='SI', n=cnt.get(e.id)||0, pct=Math.min(100,Math.round(n*100/totalComp));
+      return '<tr><td class="cfg-n">'+num.get(e.id)+'</td><td class="cfg-nm">'+esc((e.apellidos+', '+e.nombres).toUpperCase())+'</td><td class="cfg-sec">'+esc(cfgGYS(e))+'</td>'+
+        '<td style="text-align:center;"><span class="cfg-sit '+(t?'t':'m')+'">'+(t?'T · Trasladado':'M · Matriculado')+'</span></td>'+
+        '<td><div class="cfg-av"><div class="cfg-ring" style="--p:'+pct+'"><span>'+pct+'%</span></div><small>'+n+' notas</small></div></td>'+
+        '<td><div class="btn-row" style="flex-wrap:nowrap;justify-content:center;"><button type="button" class="btn secondary sm icon-only" title="Editar" onclick="formEstudiante(\''+e.id+'\')">'+pen+'</button>'+
+        '<button type="button" class="btn secondary sm icon-only" title="Eliminar" onclick="deleteEntity(\'estudiantes\',\''+e.id+'\',\'estudiante\')">&times;</button></div></td></tr>';
+    }).join('')+'</tbody></table></div>';
+}
+function cfgParseNombre(raw){
+  raw=String(raw||'').trim();
+  if(raw.indexOf(',')>=0){ const p=raw.split(','); return {ap:p[0].trim(), nm:p.slice(1).join(',').trim()}; }
+  const w=raw.split(/\s+/); return {ap:w.slice(0,2).join(' '), nm:w.slice(2).join(' ')};
+}
+/* Devuelve 'nuevo' | 'dup' | 'error' */
+function cfgAgregarEstudiante(ap,nm,grado,sec,traslado){
+  if(!ap || !GRADOS.includes(grado) || !SECCION_LETRAS.includes(sec)) return 'error';
+  const ya=DB.estudiantes.find(function(e){
+    return normStr(e.apellidos)===normStr(ap) && normStr(e.nombres)===normStr(nm) && e.grado===grado && String(e.seccion||'').toUpperCase()===sec;
+  });
+  if(ya){ if(traslado!==undefined) ya.traslado=traslado; return 'dup'; }
+  DB.estudiantes.push({id:uid('est'),apellidos:ap,nombres:nm,dni:'',sexo:'M',fechaNacimiento:'',grado:grado,seccion:sec,institucionId:cfgIEId(),traslado:traslado||''});
+  return 'nuevo';
+}
+function cfgTrasNomina(msg){
+  saveDB(); renderSidebarBadge(); cfgPaintNomina(); toast(msg, 'ok');
+}
+function cfgDescargarPlantilla(){
+  const filas=[['GYS','N°','APELLIDOS Y NOMBRES','SITUACIÓN (M/T)']];
+  if(DB.estudiantes.length){
+    const c={};
+    [...DB.estudiantes].sort(function(a,b){return a.grado-b.grado||String(a.seccion||'').localeCompare(String(b.seccion||''))||a.apellidos.localeCompare(b.apellidos);})
+      .forEach(function(e){ const g=cfgGYS(e); c[g]=(c[g]||0)+1; filas.push([g,c[g],(e.apellidos+', '+e.nombres).toUpperCase(),e.traslado==='SI'?'T':'M']); });
+  } else {
+    filas.push(['1A',1,'APELLIDO PATERNO APELLIDO MATERNO, Nombres','M'],['1A',2,'','']);
+  }
+  const ws=XLSX.utils.aoa_to_sheet(filas);
+  ws['!cols']=[{wch:7},{wch:6},{wch:48},{wch:16}];
+  const wb=XLSX.utils.book_new(); XLSX.utils.book_append_sheet(wb,ws,'Nómina');
+  XLSX.writeFile(wb,'Plantilla_nomina_estudiantes.xlsx'); toast('Plantilla descargada.');
+}
+function cfgImportarNomina(ev){
+  const file=ev.target.files[0]; ev.target.value='';
+  if(!file) return;
+  const reader=new FileReader();
+  reader.onload=function(e){
+    try{
+      const wb=XLSX.read(new Uint8Array(e.target.result),{type:'array'});
+      const json=XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]],{header:1,defval:''});
+      if(json.length<2){ toast('El archivo está vacío o sin datos.','err'); return; }
+      const hdr=json[0].map(function(h){return normStr(h);});
+      const iG=hdr.findIndex(function(h){return h==='GYS';});
+      const iN=hdr.findIndex(function(h){return h.indexOf('APELLIDOS')>=0;});
+      const iS=hdr.findIndex(function(h){return h.indexOf('SITUACION')>=0;});
+      if(iG<0||iN<0){ toast('Estructura no reconocida. Descarga la plantilla oficial.','err'); return; }
+      let nuevos=0,dups=0,errores=0;
+      for(let r=1;r<json.length;r++){
+        const row=json[r], raw=String(row[iN]||'').trim();
+        if(!raw) continue;
+        const gys=String(row[iG]||'').trim().toUpperCase(), m=gys.match(/^(\d)([A-Z])$/);
+        if(!m){ errores++; continue; }
+        const p=cfgParseNombre(raw);
+        let tr; if(iS>=0){ const s=String(row[iS]||'').trim().toUpperCase(); tr=(s.charAt(0)==='T')?'SI':''; }
+        const res=cfgAgregarEstudiante(p.ap,p.nm,parseInt(m[1]),m[2],tr);
+        if(res==='nuevo') nuevos++; else if(res==='dup') dups++; else errores++;
+      }
+      cfgTrasNomina(nuevos+' estudiante(s) importado(s)'+(dups?' · '+dups+' ya existían':'')+(errores?' · '+errores+' fila(s) con errores':'')+'.');
+    }catch(ex){ console.error(ex); toast('Error al leer el archivo.','err'); }
+  };
+  reader.readAsArrayBuffer(file);
+}
+
+/* ---------- Carga por JSON (Consolidado Notas) ---------- */
+let cfgJson=null;
+const CFG_AREA_ALIAS={
+  'MATEMATICA':'Matemática','COMUNICACION':'Comunicación','CIENCIA Y TECNOLOGIA':'Ciencia y Tecnología','INGLES':'Inglés',
+  'EDUCACION FISICA':'Educación Física','DPCC':'Desarrollo Personal, Ciudadanía y Cívica','CIENCIAS SOCIALES':'Ciencias Sociales',
+  'RELIGION':'Educación Religiosa','ARTE':'Arte y Cultura','EPT':'Educación para el Trabajo'
+};
+function cfgTokens(s){ return normStr(s).replace(/[^A-Z0-9 ]/g,' ').split(' ').filter(function(w){return w.length>2;}); }
+function cfgSim(a,b){ const A=cfgTokens(a),B=cfgTokens(b); if(!A.length||!B.length) return 0; const sb=new Set(B); const i=A.filter(function(w){return sb.has(w);}).length; return i/(new Set(A.concat(B)).size); }
+/* Devuelve {compId: {areaId, competenciaId}} para las competencias del JSON */
+function cfgMapearCompetencias(comps){
+  const ord=areasOrdenadas(), res={}, porNombre={};
+  ord.forEach(function(a){ porNombre[normStr(a.nombre)]=a; });
+  const grupos={};
+  comps.forEach(function(c){ (grupos[c.area]=grupos[c.area]||[]).push(c); });
+  Object.keys(grupos).forEach(function(an){
+    const lista=grupos[an], k=normStr(an);
+    if(k.indexOf('TRANSV')>=0){
+      lista.forEach(function(c){
+        const a=porNombre[normStr(/TIC/i.test(c.name)?'Temas Transversales TIC':'Temas Transversales Autonomia')];
+        if(a&&a.competencias[0]) res[c.id]={areaId:a.id,competenciaId:a.competencias[0].id};
+      });
+      return;
+    }
+    const alias=CFG_AREA_ALIAS[k], a=porNombre[normStr(alias||an)]
+      || ord.find(function(x){return cfgSim(x.nombre,an)>=0.5;});
+    if(!a) return;
+    const usados=new Set();
+    lista.forEach(function(c,i){
+      let best=null,bs=0;
+      a.competencias.forEach(function(sc){
+        if(usados.has(sc.id)) return;
+        const s=normStr(sc.nombre)===normStr(c.name)?2:cfgSim(sc.nombre,c.name);
+        if(s>bs){bs=s;best=sc;}
+      });
+      if(!best||bs<0.4){ const sc=a.competencias[i]; if(sc&&!usados.has(sc.id)) best=sc; }
+      if(best){ usados.add(best.id); res[c.id]={areaId:a.id,competenciaId:best.id}; }
+    });
+  });
+  return res;
+}
+function cfgLeerJson(ev){
+  const file=ev.target.files[0]; ev.target.value='';
+  if(!file) return;
+  const reader=new FileReader();
+  reader.onload=function(e){
+    try{
+      const d=JSON.parse(e.target.result);
+      if(!d||!Array.isArray(d.students)||!Array.isArray(d.competencies)||!d.metadata) throw new Error('formato');
+      const per=(d.metadata.periods&&d.metadata.periods.length)?d.metadata.periods:[];
+      const conteo=per.map(function(_,i){
+        let n=0; d.students.forEach(function(s){ const p=s.periods&&s.periods[i]; if(p) n+=Object.keys(p).length; }); return n;
+      });
+      let ult=-1; conteo.forEach(function(n,i){ if(n>0) ult=i; });
+      cfgJson={data:d,conteo:conteo,ult:ult};
+      cfgModalJson();
+    }catch(ex){ console.error(ex); toast('JSON no reconocido. Debe ser el archivo del Consolidado de Notas (metadata, competencies, students).','err'); }
+  };
+  reader.readAsText(file,'utf-8');
+}
+function cfgModalJson(){
+  const d=cfgJson.data, m=d.metadata, per=m.periods||[];
+  const opts=per.map(function(p,i){
+    return '<option value="'+i+'"'+(i===cfgJson.ult?' selected':'')+(cfgJson.conteo[i]?'':' disabled')+'>'+esc(p)+' · '+cfgJson.conteo[i]+' nota(s)</option>';
+  }).join('')+'<option value="all">Todos los períodos con notas</option>';
+  openModal('Cargar desde JSON',
+    '<div class="cfg-note" style="margin-bottom:12px;">'+esc(m.institution||'Sin nombre')+' · '+esc(String(m.year||''))+' · '+esc(m.mode||'')+' · '+d.students.length+' estudiantes · '+d.competencies.length+' competencias</div>'+
+    '<div class="cfg-field"><label class="cfg-lbl" for="cfgJP">Período a cargar</label><select class="cfg-in" id="cfgJP">'+opts+'</select></div>'+
+    '<div class="cfg-vis" style="margin-bottom:6px;">'+
+      '<label><input type="checkbox" id="cfgJN" checked> Cargar notas</label>'+
+      '<label><input type="checkbox" id="cfgJE" checked> Cargar nómina de estudiantes</label>'+
+      '<label><input type="checkbox" id="cfgJC" checked> Aplicar datos institucionales, períodos y logo del JSON</label></div>'+
+    '<div class="help-note">Si el estudiante ya existe (apellidos, nombres, grado y sección) se actualizan sus notas; si no, se crea. Para cargar el III o IV Bimestre (o un trimestre) sube el JSON actualizado y elige ese período.</div>',
+    '<button class="btn secondary" onclick="closeModal()">Cancelar</button><button class="btn" onclick="cfgAplicarJson()">Cargar</button>');
+}
+function cfgAplicarJson(){
+  if(!cfgJson) return;
+  const d=cfgJson.data, m=d.metadata, per=m.periods||[];
+  const selP=$('#cfgJP').value, nNotas=$('#cfgJN').checked, nEst=$('#cfgJE').checked, nCfg=$('#cfgJC').checked;
+  const C=DB.config;
+  if(nCfg){
+    const modo=(m.mode==='trimestral')?'trimestral':'bimestral';
+    const nombres=per.length?per.slice():CFG_PERIODOS[modo].slice();
+    const hid=new Set(m.hiddenPeriods||[]);
+    let vis=nombres.map(function(_,i){return !hid.has(i);});
+    if(!vis.some(Boolean)) vis=nombres.map(function(){return true;});
+    C.evaluacion={modo:modo,nombres:nombres,visibles:vis};
+    if(m.year) C.anio=String(m.year);
+    if(m.docente!==undefined) C.docente=m.docente||'';
+    if(typeof m.castellanoEnabled==='boolean') C.usarCastellano=m.castellanoEnabled;
+    if(m.logo) C.logo=m.logo;
+    let ie=DB.instituciones[0];
+    if(!ie){ ie={id:uid('inst'),nombre:'',codigoModular:'',dre:'',ugel:'',director:'',telefono:''}; DB.instituciones.push(ie); }
+    if(m.institution) ie.nombre=m.institution;
+    ie.ugel=m.ugel||ie.ugel||''; ie.director=m.director||ie.director||'';
+    DB.estudiantes.forEach(function(e){ if(!e.institucionId) e.institucionId=ie.id; });
+    cfgEvDraft=null;
+  }
+  const mapa=cfgMapearCompetencias(d.competencies);
+  const NV=new Set(['AD','A','B','C']), hoy=todayISO();
+  const idxs=(selP==='all')?per.map(function(_,i){return i;}):[parseInt(selP)];
+  let nuevos=0,existentes=0,errores=0,notas=0,sinMapa=new Set();
+  d.students.forEach(function(s){
+    const mm=String(s.section||'').trim().toUpperCase().match(/^(\d)([A-Z])$/);
+    if(!mm){ errores++; return; }
+    const grado=parseInt(mm[1]), sec=mm[2], p=cfgParseNombre(s.name);
+    const buscar=function(){ return DB.estudiantes.find(function(e){return normStr(e.apellidos)===normStr(p.ap)&&normStr(e.nombres)===normStr(p.nm)&&e.grado===grado&&String(e.seccion||'').toUpperCase()===sec;}); };
+    let est=buscar();
+    if(!est){
+      if(!nEst){ errores++; return; }
+      const r=cfgAgregarEstudiante(p.ap,p.nm,grado,sec,s.situation==='T'?'SI':'');
+      if(r==='error'){ errores++; return; }
+      est=buscar(); nuevos++;
+    } else { existentes++; if(nEst&&s.situation) est.traslado=(s.situation==='T')?'SI':''; }
+    if(!nNotas||!est) return;
+    idxs.forEach(function(i){
+      const pd=s.periods&&s.periods[i]; if(!pd) return;
+      Object.keys(pd).forEach(function(cid){
+        const nota=String(pd[cid]||'').trim().toUpperCase();
+        if(!NV.has(nota)) return;
+        const mp=mapa[cid]; if(!mp){ sinMapa.add(cid); return; }
+        const ix=DB.calificaciones.findIndex(function(c){return c.estudianteId===est.id&&c.areaId===mp.areaId&&c.competenciaId===mp.competenciaId&&(c.periodo||'')===(per[i]||'');});
+        if(ix>=0) DB.calificaciones.splice(ix,1);
+        DB.calificaciones.push({id:uid('cal'),estudianteId:est.id,areaId:mp.areaId,competenciaId:mp.competenciaId,calificacion:nota,periodo:per[i]||'',fecha:hoy,docenteId:''});
+        notas++;
+      });
+    });
+  });
+  if(selP!=='all' && per[parseInt(selP)]!==undefined) DB.config.vista=per[parseInt(selP)];
+  cfgJson=null; closeModal();
+  invalidateCache(); saveDB(); renderPeriodoSelector(); renderSidebarBadge();
+  if(currentView==='configuracion') renderConfiguracion();
+  toast(notas+' nota(s) · '+nuevos+' nuevo(s) · '+existentes+' existente(s)'+(errores?' · '+errores+' omitido(s)':'')+(sinMapa.size?' · '+sinMapa.size+' competencia(s) sin equivalencia':'')+'.');
+}
+
+function cfgLlenadoRapido(){
+  openModal('Llenado rápido de estudiantes',
+    '<div class="help-note">Pega la lista de estudiantes, uno por línea, con el formato <strong>APELLIDOS, Nombres</strong>. Si pegas desde Excel, se ignora la numeración inicial.</div>'+
+    '<div class="form-grid" style="margin-bottom:12px;">'+
+      '<div><label class="cfg-lbl" for="cfgLrG">Grado</label><select class="cfg-in" id="cfgLrG">'+GRADOS.map(function(g){return '<option value="'+g+'"'+(String(cfgFiltro.grado)===String(g)?' selected':'')+'>'+g+'.º de Secundaria</option>';}).join('')+'</select></div>'+
+      '<div><label class="cfg-lbl" for="cfgLrS">Sección</label><select class="cfg-in" id="cfgLrS">'+SECCION_LETRAS.map(function(s){return '<option'+(cfgFiltro.seccion===s?' selected':'')+'>'+s+'</option>';}).join('')+'</select></div></div>'+
+    '<label class="cfg-lbl" for="cfgLrT">Lista de estudiantes</label>'+
+    '<textarea class="cfg-in" id="cfgLrT" rows="12" placeholder="GARCÍA PÉREZ, Luis Alberto&#10;QUISPE MAMANI, Ana María"></textarea>',
+    '<button class="btn secondary" onclick="closeModal()">Cancelar</button><button class="btn" onclick="cfgLlenadoGuardar()">Agregar estudiantes</button>');
+}
+function cfgLlenadoGuardar(){
+  const grado=parseInt($('#cfgLrG').value), sec=$('#cfgLrS').value, lineas=$('#cfgLrT').value.split(/\r?\n/);
+  let nuevos=0,dups=0,errores=0;
+  lineas.forEach(function(l){
+    l=l.trim(); if(!l) return;
+    if(l.indexOf('\t')>=0){ const part=l.split('\t').map(function(x){return x.trim();}).filter(Boolean).filter(function(x){return /[A-Za-zÁ-ÿ]/.test(x);}); l=part[0]||''; }
+    l=l.replace(/^\s*\d+\s*[.)\-]?\s+/,'').trim();
+    if(!l) return;
+    const p=cfgParseNombre(l), res=cfgAgregarEstudiante(p.ap,p.nm,grado,sec);
+    if(res==='nuevo') nuevos++; else if(res==='dup') dups++; else errores++;
+  });
+  closeModal();
+  cfgTrasNomina(nuevos+' estudiante(s) agregado(s) a '+grado+'.º "'+sec+'"'+(dups?' · '+dups+' ya existían':'')+(errores?' · '+errores+' con errores':'')+'.');
+}
+
+
+
+/* ============================================================
+   MÓDULO: COMPARATIVA ANUAL
+   Áreas desaprobadas por bimestre/trimestre, evolución y mensaje final
+   ============================================================ */
+let _cmpFiltros={grado:'',seccion:'',tend:'',q:'',desap:'',min:1,orden:'',pag:0};
+let _cmpDatos=null;
+const CMP_PAG=40;
+function vigentesDePeriodo(per){
+  const m=new Map();
+  DB.calificaciones.forEach(function(c){
+    if(c.periodo!==per) return;
+    const k=c.estudianteId+'|'+c.areaId+'|'+c.competenciaId, p=m.get(k);
+    if(!p||c.fecha>=p.fecha) m.set(k,c);
+  });
+  return m;
+}
+function cmpCalcular(){
+  const pers=cfgPeriodosVisibles(), maps=pers.map(vigentesDePeriodo);
+  const filas=DB.estudiantes.map(function(e){
+    const pts=pers.map(function(p,i){
+      const s=calcularSituacionEstudiante(e,maps[i]);
+      const ev=s.evaluadas>0 && s.codigo!=='TRASLADADO';
+      return {per:p,ev:ev,des:s.areasDesaprobadas,nDes:s.areasDesaprobadas.length,areasEval:s.areasEvaluadas||0,
+        aprob:(s.areasEvaluadas||0)-s.areasDesaprobadas.length,nC:s.nC,cod:s.codigo};
+    });
+    const evs=pts.filter(function(x){return x.ev;});
+    let tend='NA', delta=0;
+    if(evs.length>=2){
+      const sc=function(x){return x.aprob*1000-x.nC;};
+      delta=sc(evs[evs.length-1])-sc(evs[0]);
+      tend=delta>0?'MEJORA':(delta<0?'EMPEORA':'ESTABLE');
+    }
+    const completo=pers.length>0 && pts.every(function(x){return x.ev;});
+    const total=pts.reduce(function(a,x){return a+(x.ev?x.nDes:0);},0);
+    return {e:e,pts:pts,evs:evs,total:total,tend:tend,completo:completo,trasl:e.traslado==='SI',mensaje:cmpMensaje(e,pers,pts,evs,tend,completo)};
+  }).sort(function(a,b){
+    return a.e.grado-b.e.grado||String(a.e.seccion||'').localeCompare(String(b.e.seccion||''))||String(a.e.apellidos||'').localeCompare(String(b.e.apellidos||''));
+  });
+  return {pers:pers,filas:filas};
+}
+function cmpMensaje(e,pers,pts,evs,tend,completo){
+  if(e.traslado==='SI') return 'Estudiante trasladado.';
+  if(!evs.length) return 'Sin calificaciones registradas.';
+  const ult=evs[evs.length-1], prim=evs[0];
+  const lista=function(x){ return x.nDes? x.nDes+' área(s) desaprobada(s) ('+x.des.map(sitAbrev).join(', ')+')' : 'ninguna área desaprobada'; };
+  if(!completo){
+    const faltan=pers.length-evs.length;
+    return 'En curso: '+lista(ult)+' en '+ult.per+'. '+(tend==='MEJORA'?'Viene mejorando.':tend==='EMPEORA'?'Viene bajando su rendimiento.':tend==='ESTABLE'?'Se mantiene estable.':'')+' Faltan '+faltan+' período(s) por registrar.';
+  }
+  let t='Cierra el año con '+lista(ult)+'. ';
+  const cambio=(prim.nDes!==ult.nDes)?('de '+prim.nDes+' a '+ult.nDes+' áreas desaprobadas'):('áreas desaprobadas sin cambio, competencias en C de '+prim.nC+' a '+ult.nC);
+  if(tend==='MEJORA') t+='Mejoró durante el año ('+cambio+'). ';
+  else if(tend==='EMPEORA') t+='Su rendimiento bajó durante el año ('+cambio+'). ';
+  else t+='Se mantuvo estable durante el año. ';
+  t+='Situación final: '+etiquetaSituacion(ult.cod)+'.';
+  if(ult.cod==='RECUPERACION'||ult.cod==='PERMANECE') t+=' Requiere acompañamiento y plan de recuperación.';
+  else if(ult.cod==='PROMOVIDO' && tend==='EMPEORA') t+=' Se recomienda reforzar para sostener su logro.';
+  return t;
+}
+function cmpSparkline(f,n){
+  const W=Math.max(70,n*34), H=40, pad=8;
+  const maxA=Math.max(1,Math.max.apply(null,f.pts.map(function(x){return x.areasEval;})));
+  const col=f.tend==='MEJORA'?'#16875a':(f.tend==='EMPEORA'?'#c4302b':'#7a869a');
+  const xs=function(i){ return n>1? pad+i*((W-2*pad)/(n-1)) : W/2; };
+  const ys=function(a){ return H-pad-(a/maxA)*(H-2*pad); };
+  let path='', dots='', started=false;
+  f.pts.forEach(function(p,i){
+    if(!p.ev) return;
+    const x=xs(i).toFixed(1), y=ys(p.aprob).toFixed(1);
+    path+=(started?'L':'M')+x+' '+y+' '; started=true;
+    dots+='<circle cx="'+x+'" cy="'+y+'" r="3.4" fill="'+(p.nDes?'#c4302b':'#16875a')+'" stroke="#fff" stroke-width="1"><title>'+esc(p.per)+': '+p.aprob+' área(s) aprobada(s), '+p.nDes+' desaprobada(s)</title></circle>';
+  });
+  return '<svg width="'+W+'" height="'+H+'" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Evolución">'+
+    '<line x1="'+pad+'" y1="'+(H-pad)+'" x2="'+(W-pad)+'" y2="'+(H-pad)+'" stroke="#e3e8ef"/>'+
+    (path?'<path d="'+path+'" fill="none" stroke="'+col+'" stroke-width="2" stroke-linejoin="round"/>':'')+dots+'</svg>';
+}
+function cmpTendBadge(t){
+  const m={MEJORA:['cmp-up','▲ Mejora'],EMPEORA:['cmp-down','▼ Empeora'],ESTABLE:['cmp-eq','● Estable'],NA:['cmp-na','Sin datos']};
+  const x=m[t]||m.NA; return '<span class="cmp-badge '+x[0]+'">'+x[1]+'</span>';
+}
+function cmpFiltradas(){
+  const f=_cmpFiltros, q=normStr(f.q);
+  const out=_cmpDatos.filas.filter(function(r){
+    const e=r.e;
+    if(f.grado && String(e.grado)!==f.grado) return false;
+    if(f.seccion && e.seccion!==f.seccion) return false;
+    if(f.tend && r.tend!==f.tend) return false;
+    if(q && normStr(e.apellidos+' '+e.nombres).indexOf(q)<0) return false;
+    if(f.desap!==''){
+      const min=Number(f.min)||1;
+      if(f.desap==='any'){ if(!r.pts.some(function(p){return p.ev&&p.nDes>=min;})) return false; }
+      else { const p=r.pts[Number(f.desap)]; if(!p||!p.ev||p.nDes<min) return false; }
+    }
+    return true;
+  });
+  if(f.orden==='asc') out.sort(function(a,b){return a.total-b.total;});
+  else if(f.orden==='desc') out.sort(function(a,b){return b.total-a.total;});
+  return out;
+}
+function cmpOrdenar(v){
+  _cmpFiltros.orden=v; _cmpFiltros.pag=0;
+  const s=$('#cmpO'); if(s) s.value=v;
+  cmpPintar();
+}
+function cmpCiclarOrden(){ cmpOrdenar(_cmpFiltros.orden===''?'asc':(_cmpFiltros.orden==='asc'?'desc':'')); }
+function renderComparativa(){
+  _cmpDatos=cmpCalcular();
+  const D=_cmpDatos, el=$('#viewComparativa');
+  const cnt={MEJORA:0,EMPEORA:0,ESTABLE:0,NA:0}; D.filas.forEach(function(r){cnt[r.tend]++;});
+  const completos=D.filas.filter(function(r){return r.completo;}).length;
+  const kpi=function(cls,t,n,s){ return '<div class="kpi '+cls+'"><div class="stripe"></div><div class="eyebrow">'+t+'</div><div class="num">'+n+'</div><div class="foot">'+s+'</div></div>'; };
+  const gOpt='<option value="">Todos los grados</option>'+GRADOS.map(function(g){return '<option value="'+g+'"'+(_cmpFiltros.grado===String(g)?' selected':'')+'>'+g+'.º grado</option>';}).join('');
+  const sOpt='<option value="">Todas las secciones</option>'+SECCION_LETRAS.map(function(s){return '<option value="'+s+'"'+(_cmpFiltros.seccion===s?' selected':'')+'>Sección '+s+'</option>';}).join('');
+  const dOpt='<option value="">Todos los estudiantes</option><option value="any"'+(_cmpFiltros.desap==='any'?' selected':'')+'>Cualquier período</option>'+D.pers.map(function(p,i){return '<option value="'+i+'"'+(_cmpFiltros.desap===String(i)?' selected':'')+'>'+esc(p)+'</option>';}).join('');
+  const mOpt=[1,2,3,4].map(function(n){return '<option value="'+n+'"'+(Number(_cmpFiltros.min)===n?' selected':'')+'>'+(n===4?'4 o más':(n===1?'1 o más':n+' o más'))+'</option>';}).join('');
+  const tOpt=[['','Toda tendencia'],['MEJORA','Mejora'],['EMPEORA','Empeora'],['ESTABLE','Estable'],['NA','Sin datos suficientes']].map(function(x){return '<option value="'+x[0]+'"'+(_cmpFiltros.tend===x[0]?' selected':'')+'>'+x[1]+'</option>';}).join('');
+  el.innerHTML=
+    '<div class="grid grid-4" style="margin-bottom:18px;">'+
+      kpi('accent-green','Mejoran',cnt.MEJORA,'Más áreas aprobadas que al inicio')+
+      kpi('accent-red','Empeoran',cnt.EMPEORA,'Menos áreas aprobadas que al inicio')+
+      kpi('accent-gold','Estables',cnt.ESTABLE,'Sin cambio en el año')+
+      kpi('accent-navy','Año completo',completos,'Con notas en los '+D.pers.length+' períodos')+
+    '</div>'+
+    '<div class="card"><div class="card-head"><div><h3>Comparativa anual por estudiante</h3>'+
+      '<div class="hint">Áreas desaprobadas en cada '+(DB.config.evaluacion.modo==='trimestral'?'trimestre':'bimestre')+' y evolución del rendimiento. La línea sube cuando aumentan las áreas aprobadas. Los períodos son los configurados en Configuración (los ocultos no se muestran).</div></div></div>'+
+      '<div class="cfg-nomtools" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));">'+
+        '<div><label class="cfg-lbl" for="cmpQ">Buscar</label><input class="cfg-in" id="cmpQ" placeholder="Apellidos o nombres" value="'+esc(_cmpFiltros.q)+'" oninput="_cmpFiltros.q=this.value;_cmpFiltros.pag=0;cmpPintar()"></div>'+
+        '<div><label class="cfg-lbl" for="cmpG">Grado</label><select class="cfg-in" id="cmpG" onchange="_cmpFiltros.grado=this.value;_cmpFiltros.pag=0;cmpPintar()">'+gOpt+'</select></div>'+
+        '<div><label class="cfg-lbl" for="cmpS">Sección</label><select class="cfg-in" id="cmpS" onchange="_cmpFiltros.seccion=this.value;_cmpFiltros.pag=0;cmpPintar()">'+sOpt+'</select></div>'+
+        '<div><label class="cfg-lbl" for="cmpT">Tendencia</label><select class="cfg-in" id="cmpT" onchange="_cmpFiltros.tend=this.value;_cmpFiltros.pag=0;cmpPintar()">'+tOpt+'</select></div>'+
+        '<div><label class="cfg-lbl" for="cmpD">Con áreas desaprobadas en</label><select class="cfg-in" id="cmpD" onchange="_cmpFiltros.desap=this.value;_cmpFiltros.pag=0;cmpPintar()">'+dOpt+'</select></div>'+
+        '<div><label class="cfg-lbl" for="cmpO">Ordenar por total de áreas</label><select class="cfg-in" id="cmpO" onchange="cmpOrdenar(this.value)"><option value=""'+(_cmpFiltros.orden===''?' selected':'')+'>Orden alfabético</option><option value="asc"'+(_cmpFiltros.orden==='asc'?' selected':'')+'>De menor a mayor</option><option value="desc"'+(_cmpFiltros.orden==='desc'?' selected':'')+'>De mayor a menor</option></select></div>'+
+        '<div><label class="cfg-lbl" for="cmpM">Mínimo de áreas</label><select class="cfg-in" id="cmpM" onchange="_cmpFiltros.min=this.value;_cmpFiltros.pag=0;cmpPintar()">'+mOpt+'</select></div>'+
+        '<div class="btn-row" style="flex-wrap:nowrap;"><button type="button" class="btn" onclick="cmpImprimir()">Imprimir</button><button type="button" class="btn secondary" onclick="cmpExportar()">Exportar Excel</button></div></div>'+
+      '<div id="cmpResumen"></div>'+
+      '<div class="small-muted" id="cmpCount" style="margin-bottom:8px;"></div>'+
+      '<div id="cmpTabla"></div></div>';
+  cmpPintar();
+}
+function cmpResumen(rows){
+  const D=_cmpDatos;
+  return D.pers.map(function(p,i){
+    let ev=0,con=0,tot=0,tres=0; const porArea={};
+    rows.forEach(function(r){
+      const x=r.pts[i]; if(!x||!x.ev) return;
+      ev++; if(x.nDes>0) con++; tot+=x.nDes; if(x.nDes>=3) tres++;
+      x.des.forEach(function(a){ porArea[a]=(porArea[a]||0)+1; });
+    });
+    const top=Object.keys(porArea).sort(function(a,b){return porArea[b]-porArea[a];}).slice(0,3).map(function(a){return sitAbrev(a)+' ('+porArea[a]+')';}).join(', ');
+    return {per:p,ev:ev,con:con,pct:ev?Math.round(con*100/ev):0,tot:tot,tres:tres,prom:ev?(tot/ev).toFixed(2):'0.00',top:top||'—'};
+  });
+}
+function cmpPintar(){
+  const D=_cmpDatos, rows=cmpFiltradas(), tot=rows.length;
+  const maxPag=Math.max(0,Math.ceil(tot/CMP_PAG)-1);
+  if(_cmpFiltros.pag>maxPag) _cmpFiltros.pag=maxPag;
+  const ini=_cmpFiltros.pag*CMP_PAG, vis=rows.slice(ini,ini+CMP_PAG);
+  $('#cmpCount').textContent='Mostrando '+(tot?ini+1:0)+'–'+(ini+vis.length)+' de '+tot+' estudiantes';
+  const res=cmpResumen(rows);
+  $('#cmpResumen').innerHTML=tot?'<div class="cfg-scroll" style="max-height:none;margin-bottom:14px;"><table class="cfg-nom"><thead><tr><th class="l">Resumen del filtro actual ('+tot+' estudiantes)</th><th>Evaluados</th><th>Con áreas desaprobadas</th><th>%</th><th>Total áreas desaprobadas</th><th>Promedio por estudiante</th><th>Con 3 o más áreas</th><th class="l">Áreas más desaprobadas</th></tr></thead><tbody>'+
+    res.map(function(x){return '<tr><td class="cfg-nm">'+esc(x.per)+'</td><td class="cfg-n">'+x.ev+'</td><td class="cfg-n">'+x.con+'</td><td class="cfg-n">'+x.pct+'%</td><td class="cfg-n"><strong>'+x.tot+'</strong></td><td class="cfg-n">'+x.prom+'</td><td class="cfg-n">'+x.tres+'</td><td style="font-size:12px;">'+esc(x.top)+'</td></tr>';}).join('')+
+    '</tbody></table></div>':'';
+  if(!D.pers.length){ $('#cmpTabla').innerHTML='<div class="empty-state">No hay períodos visibles. Configúralos en la pestaña Configuración.</div>'; return; }
+  if(!tot){ $('#cmpTabla').innerHTML='<div class="empty-state">No hay estudiantes para mostrar.</div>'; return; }
+  const th=D.pers.map(function(p){return '<th style="text-align:center;min-width:150px;">'+esc(p)+'</th>';}).join('');
+  const body=vis.map(function(r,i){
+    const celdas=r.pts.map(function(p,k){
+      if(r.trasl) return '<td class="cmp-c"><span class="cmp-na">—</span></td>';
+      if(!p.ev) return '<td class="cmp-c"><span class="cmp-na">Sin notas</span></td>';
+      let flecha='';
+      const prev=r.pts.slice(0,k).filter(function(x){return x.ev;}).pop();
+      if(prev){ const d=(p.aprob*1000-p.nC)-(prev.aprob*1000-prev.nC); flecha=d>0?' <span class="cmp-ar up">▲</span>':(d<0?' <span class="cmp-ar down">▼</span>':' <span class="cmp-ar eq">=</span>'); }
+      return '<td class="cmp-c"><span class="cmp-n '+(p.nDes?'bad':'ok')+'">'+p.nDes+'</span>'+flecha+
+        '<div class="cmp-areas">'+(p.nDes?esc(p.des.map(sitAbrev).join(', ')):'Sin áreas desaprobadas')+'</div></td>';
+    }).join('');
+    return '<tr><td class="cfg-n">'+(ini+i+1)+'</td>'+
+      '<td><div class="cfg-nm">'+esc(r.e.apellidos+', '+r.e.nombres)+'</div></td>'+
+      '<td class="cfg-sec">'+cfgGYS(r.e)+'</td>'+celdas+
+      '<td class="cmp-c"><span class="cmp-n '+(r.total?'bad':'ok')+'">'+(r.trasl?'—':r.total)+'</span></td>'+
+      '<td style="text-align:center;">'+(r.trasl?'':cmpSparkline(r,D.pers.length))+'<div>'+(r.trasl?'<span class="cmp-badge cmp-na">Trasladado</span>':cmpTendBadge(r.tend))+'</div></td>'+
+      '<td class="cmp-msg'+(r.completo?' fin':'')+'">'+esc(r.mensaje)+'</td></tr>';
+  }).join('');
+  const pag=maxPag>0?'<div class="btn-row" style="margin-top:12px;justify-content:center;">'+
+    '<button class="btn secondary sm" '+(_cmpFiltros.pag<=0?'disabled':'')+' onclick="_cmpFiltros.pag--;cmpPintar()">Anterior</button>'+
+    '<span class="small-muted" style="align-self:center;">Página '+(_cmpFiltros.pag+1)+' de '+(maxPag+1)+'</span>'+
+    '<button class="btn secondary sm" '+(_cmpFiltros.pag>=maxPag?'disabled':'')+' onclick="_cmpFiltros.pag++;cmpPintar()">Siguiente</button></div>':'';
+  $('#cmpTabla').innerHTML='<div class="cfg-scroll"><table class="cfg-nom"><thead><tr><th>N.º</th><th class="l">Estudiante</th><th>Grado y secc.</th>'+th+'<th style="cursor:pointer;" onclick="cmpCiclarOrden()" title="Clic para ordenar de menor a mayor / mayor a menor">Total áreas desaprob. '+(_cmpFiltros.orden==='asc'?'▲':(_cmpFiltros.orden==='desc'?'▼':'↕'))+'</th><th style="min-width:130px;">Evolución</th><th class="l" style="min-width:300px;">Mensaje</th></tr></thead><tbody>'+body+'</tbody><tfoot><tr class="cmp-tot"><td colspan="3">TOTAL ('+tot+' estudiantes)</td>'+res.map(function(x){return '<td class="cmp-c">'+x.tot+' áreas<div class="cmp-areas">'+x.con+' estudiante(s)</div></td>';}).join('')+'<td class="cmp-c">'+rows.reduce(function(a,r){return a+r.total;},0)+'</td><td></td><td></td></tr></tfoot></table></div>'+pag;
+}
+function cmpExportar(){
+  const D=_cmpDatos, rows=cmpFiltradas();
+  const aoa=[['Estudiante','Grado','Sección'].concat(D.pers.map(function(p){return p+' - N.º áreas desaprobadas';}),D.pers.map(function(p){return p+' - Áreas desaprobadas';}),['Total áreas desaprobadas','Tendencia','Mensaje'])];
+  rows.forEach(function(r){
+    aoa.push([r.e.apellidos+', '+r.e.nombres,r.e.grado,r.e.seccion].concat(
+      r.pts.map(function(p){return p.ev?p.nDes:'';}),
+      r.pts.map(function(p){return p.ev?p.des.map(sitAbrev).join(', '):'';}),
+      [r.total,{MEJORA:'Mejora',EMPEORA:'Empeora',ESTABLE:'Estable',NA:'Sin datos'}[r.tend],r.mensaje]));
+  });
+  const wb=XLSX.utils.book_new(); XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(aoa),'Comparativa anual');
+  XLSX.writeFile(wb,'Comparativa_anual_'+todayISO()+'.xlsx');
+}
+
+
+
+function cmpFiltroTxt(){
+  const f=_cmpFiltros, D=_cmpDatos, t=[];
+  if(f.grado) t.push(f.grado+'.º grado'); if(f.seccion) t.push('Sección '+f.seccion);
+  if(f.desap!==''){ t.push('Con '+(Number(f.min)>=4?'4 o más':f.min+' o más')+' área(s) desaprobada(s) en '+(f.desap==='any'?'cualquier período':D.pers[Number(f.desap)])); }
+  if(f.tend) t.push('Tendencia: '+({MEJORA:'Mejora',EMPEORA:'Empeora',ESTABLE:'Estable',NA:'Sin datos'}[f.tend]));
+  if(f.q) t.push('Búsqueda: '+f.q);
+  return t.length?t.join(' · '):'Todos los estudiantes';
+}
+function cmpImprimir(){
+  const D=_cmpDatos, rows=cmpFiltradas();
+  if(!rows.length){ toast('No hay estudiantes para imprimir con este filtro.','err'); return; }
+  const res=cmpResumen(rows), ie=(DB.instituciones[0]&&DB.instituciones[0].nombre)||'', fecha=new Date().toLocaleDateString('es-PE',{year:'numeric',month:'long',day:'numeric'});
+  const tn={MEJORA:'Mejora',EMPEORA:'Empeora',ESTABLE:'Estable',NA:'—'};
+  const th=D.pers.map(function(p){return '<th>'+esc(p)+'</th>';}).join('');
+  const body=rows.map(function(r,i){
+    return '<tr><td>'+(i+1)+'</td><td class="l">'+esc(r.e.apellidos+', '+r.e.nombres)+'</td><td>'+cfgGYS(r.e)+'</td>'+
+      r.pts.map(function(p){return '<td>'+(r.trasl?'—':(p.ev?'<b class="'+(p.nDes?'bad':'ok')+'">'+p.nDes+'</b>'+(p.nDes?'<br><small>'+esc(p.des.map(sitAbrev).join(', '))+'</small>':''):'<small>s/n</small>')) +'</td>';}).join('')+
+      '<td><b>'+(r.trasl?'—':r.total)+'</b></td><td>'+(r.trasl?'Trasladado':tn[r.tend])+'</td></tr>';
+  }).join('');
+  const totRow='<tr class="tot"><td colspan="3">TOTAL ('+rows.length+' estudiantes)</td>'+res.map(function(x){return '<td>'+x.tot+' áreas<br><small>'+x.con+' estud.</small></td>';}).join('')+'<td>'+rows.reduce(function(a,r){return a+r.total;},0)+'</td><td></td></tr>';
+  const resH='<table class="res"><thead><tr><th class="l">Período</th><th>Evaluados</th><th>Con áreas desaprobadas</th><th>%</th><th>Total áreas desaprobadas</th><th>Promedio</th><th>Con 3 o más</th><th class="l">Áreas más desaprobadas</th></tr></thead><tbody>'+
+    res.map(function(x){return '<tr><td class="l">'+esc(x.per)+'</td><td>'+x.ev+'</td><td>'+x.con+'</td><td>'+x.pct+'%</td><td><b>'+x.tot+'</b></td><td>'+x.prom+'</td><td>'+x.tres+'</td><td class="l">'+esc(x.top)+'</td></tr>';}).join('')+'</tbody></table>';
+  const html='<!doctype html><html><head><meta charset="utf-8"><title>Comparativa anual</title><style>'+
+    '@page{size:A4 landscape;margin:10mm}body{font-family:Arial,Helvetica,sans-serif;color:#142033;font-size:10px}'+
+    'h1{font-size:15px;margin:0 0 2px}.sub{color:#5b6677;font-size:10px;margin-bottom:8px}'+
+    'table{border-collapse:collapse;width:100%;margin-bottom:10px}th,td{border:1px solid #b9c3d1;padding:3px 5px;text-align:center}'+
+    'th{background:#132641;color:#fff;font-size:9px}td.l,th.l{text-align:left}thead{display:table-header-group}tr{page-break-inside:avoid}'+
+    'b.bad{color:#b4231c}b.ok{color:#16875a}small{color:#5b6677;font-size:8px}.tot td{background:#e8eef6;font-weight:bold}.res th{background:#2d6a4f}'+
+    '</style></head><body><h1>Comparativa anual de áreas desaprobadas</h1><div class="sub">'+esc(ie)+' · Nivel Secundaria · '+esc(cmpFiltroTxt())+' · Emitido: '+esc(fecha)+'</div>'+
+    resH+'<table><thead><tr><th>N.º</th><th class="l">Estudiante</th><th>Gr./Sec.</th>'+th+'<th>Total</th><th>Tendencia</th></tr></thead><tbody>'+body+totRow+'</tbody></table></body></html>';
+  const old=document.getElementById('cmpPrintFrame'); if(old) old.remove();
+  const fr=document.createElement('iframe'); fr.id='cmpPrintFrame';
+  fr.style.cssText='position:fixed;right:0;bottom:0;width:0;height:0;border:0;visibility:hidden;';
+  fr.onload=function(){ setTimeout(function(){ try{ fr.contentWindow.focus(); fr.contentWindow.print(); }catch(e){ console.error(e); } },300); };
+  fr.srcdoc=html; document.body.appendChild(fr);
+}
+
+/* ============================================================
    10. INICIALIZACIÓN
    ============================================================ */
 const SB_KEY='sst_c_secundaria_sidebar_v1';
@@ -6503,7 +7309,8 @@ function aplicarSidebar(colapsado){
 }
 function toggleSidebar(){ aplicarSidebar(!document.querySelector('.app').classList.contains('sb-collapsed')); }
 buildNav();
-navigateTo('dashboard');
+if(_idbPendiente){ idbGet('db').then(function(s){ if(s){ DB=loadDB(s); invalidateCache(); buildNav(); renderCurrentView(); sincronizarControlesOffice(); } }).catch(function(e){ console.error(e); toast('No se pudieron leer los datos guardados.','err'); }); }
+navigateTo((DB.config && DB.config.ie) || (DB.instituciones[0] && DB.instituciones[0].nombre) ? 'dashboard' : 'configuracion');
 (function(){ let c=false; try{ c=localStorage.getItem(SB_KEY)==='1'; }catch(e){} aplicarSidebar(c); })();
 renderSidebarBadge();
 sincronizarControlesOffice();
